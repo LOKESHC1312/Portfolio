@@ -55,7 +55,7 @@
                 </p>
                 <div class="hero-buttons">
 
-                    <a href="LOKESH C.pdf" target="_blank" class="btn btn-secondary" style="text-decoration: none;">
+                    <a href="Lokesh-Resume.pdf" target="_blank" class="btn btn-secondary" style="text-decoration: none;">
                         View Resume
                     </a>
                 </div>
@@ -300,12 +300,6 @@
             </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3 class="contact-info-title">Let's talk about everything!</h3>
-                    <p class="contact-info-description">
-                        Feel free to reach out for collaborations, internship opportunities,
-                        or just a friendly hello. I'm always open to discussing new projects
-                        and creative ideas.
-                    </p>
                     <div class="contact-cards">
                         <div class="contact-card">
                             <span class="contact-card-icon">
@@ -315,7 +309,6 @@
                                 </svg>
                             </span>
                             <div class="contact-card-content">
-                                <h4>Email</h4>
                                 <a href="mailto:lokeshvj2005@gmail.com">lokeshvj2005@gmail.com</a>
                             </div>
                         </div>
@@ -327,7 +320,6 @@
                                 </svg>
                             </span>
                             <div class="contact-card-content">
-                                <h4>Phone</h4>
                                 <a href="tel:+916380662003">+91 6380662003</a>
                             </div>
                         </div>
@@ -338,7 +330,6 @@
                                 </svg>
                             </span>
                             <div class="contact-card-content">
-                                <h4>Location</h4>
                                 <span>Coimbatore, Tamil Nadu</span>
                             </div>
                         </div>
@@ -452,23 +443,6 @@
         }
 
         typeEffect();
-
-        // Project filtering
-        function filterProjects(category) {
-            const cards = document.querySelectorAll('.project-card');
-            const buttons = document.querySelectorAll('.filter-btn');
-
-            buttons.forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-
-            cards.forEach(card => {
-                if (category === 'all' || card.dataset.category === category) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        }
 
         // Contact form submission
         document.getElementById('contactForm').addEventListener('submit', function(e) {

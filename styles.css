@@ -377,8 +377,18 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .btn {
-    padding: 0.7rem 1.5rem;
-    font-size: 0.85rem;
+    padding: 0.8rem 1.8rem;
+    font-size: 0.9rem;
+    min-width: 140px;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
   }
 }
 
@@ -2021,14 +2031,6 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: center;
   min-width: 0;
-}
-
-.contact-card-content h4 {
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 0.25rem;
-  color: var(--text-primary);
-  line-height: 1.2;
 }
 
 .contact-card-content a,
