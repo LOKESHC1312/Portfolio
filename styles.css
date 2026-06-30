@@ -2187,3 +2187,23 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
   }
 }
+
+/* ===== Footer ===== */
+.footer {
+  padding: var(--spacing-lg) 0;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--glass-border);
+  text-align: center;
+}
+
+.footer-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.footer-text {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin: 0;
+}
